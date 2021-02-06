@@ -6,7 +6,9 @@ import './Resultado.scss';
 const Resultado = () => {
     return(
         <div className="full" >
-            holanda
+            <div className="content-result">
+                asd
+            </div>
         </div>
     )
 }

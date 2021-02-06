@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 import Cabecera from './components/layout/cabecera/Cabecera';
-import Resultado from './components/layout/content/resultado/Resultado';
+import Content from './components/layout/content/Content';
 
 const App = () => {
   return (
     <div >
       <Cabecera />
-      <Resultado />
+      <Content />
     </div>
   );
 }
