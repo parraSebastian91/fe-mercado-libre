@@ -17,7 +17,7 @@ const Cabecera = () => {
                         </div>
                         <input type="text" className="input-busqueda" placeholder="Busqueda" />
                     </div>
-                </div>
+                </div>          
                 <div className="extra">
 
                 </div>

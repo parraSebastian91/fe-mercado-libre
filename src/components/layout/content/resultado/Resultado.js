@@ -7,7 +7,7 @@ const Resultado = () => {
     return(
         <div className="full" >
             <div className="content-result">
-                asd
+                items
             </div>
         </div>
     )

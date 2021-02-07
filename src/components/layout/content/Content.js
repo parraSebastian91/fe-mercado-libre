@@ -1,8 +1,31 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    BrowserRouter
+} from "react-router-dom";
+
+
 import Resultado from './resultado/Resultado'
+import Detalle from "./detalle/Detalle";
 import './Content.scss'
+
+const routes = [
+
+    {
+        path: "/items",
+        component: Resultado,
+    },
+    {
+        path: "/items/:id",
+        component: Detalle
+    }
+];
 
 const Content = () => {
     return (
@@ -12,7 +35,13 @@ const Content = () => {
                     asdas
                 </div>
                 <div className="contenido">
-                    <Resultado />
+                    <BrowserRouter>
+                        <Switch>
+                            {routes.map((route, i) => (
+                                <Route exact path={route.path} component={route.component} key={i} />
+                            ))}
+                        </Switch>
+                    </BrowserRouter>
                 </div>
             </div>
         </div>
