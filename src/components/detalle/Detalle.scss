@@ -1,0 +1,38 @@
+.detalle {
+    margin-top: 10px;
+    background: white;
+    border-radius: 4px 4px 0 0;
+    padding: unset;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    .producto {
+        width: 100%;
+        .imagen {
+            display: flex;
+            justify-content: center;
+            .img {
+            }
+        }
+        .descripcion {
+        }
+    }
+    .costo {
+        .info {
+            .condicion {
+                margin-right: 10px;
+            }
+            .cantidad {
+            }
+            .titulo {
+                font-weight: 800;
+                font-size: larger;
+            }
+        }
+        .valor {
+            font-size: 38px;
+        }
+        .boton {
+        }
+    }
+}

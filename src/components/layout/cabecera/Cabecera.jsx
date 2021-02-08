@@ -1,16 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { useForm } from "react-hook-form";
 import history from "./../../../utils/history";
 
-import { Redirect } from "react-router-dom";
-
 import "./Cabecera.scss";
 
 const Cabecera = (props) => {
-  const [busqueda, setBusqueda] = useState(null);
-  const { register, error, handleSubmit } = useForm();
+  const { register, handleSubmit } = useForm();
 
   const onSubmit = (data, e) => {
     const ruta = `/items?search=${data.inputBusqueda}`;

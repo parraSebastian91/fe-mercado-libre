@@ -1,0 +1,17 @@
+.bread-crump {
+    display: flex;
+    margin-top: 10px;
+    color: #666;
+    .crump {
+        font-size: 15px;
+        display: flex;
+        .arrow {
+            margin: 0px 10px 0px 10px;
+        }
+        .categoria-container {
+            .categoria {
+                color: #666;
+            }
+        }
+    }
+}

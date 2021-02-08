@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import React from 'react';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 import {
-    BrowserRouter,
     Switch,
     Route,
-    Link,
     Router
 } from "react-router-dom";
 import history from "./../../../utils/history";
@@ -28,16 +26,11 @@ const routes = [
 ];
 
 const Content = () => {
-    // state
-
-    const [busqueda, setBusqueda] = useState('');
 
     return (
         <div className="full-content">
             <div className="content-style">
-                <div className="bread-crump">
-                    asdas
-                </div>
+               
                 <div className="contenido">
                     <Router history={history}>
                         <Switch>

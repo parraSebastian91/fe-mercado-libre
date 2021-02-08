@@ -21,15 +21,31 @@
                 max-height: 100%;
             }
         }
-        .descripcion{
-            .valor-container{
-                .valor{
-
+        .descripcion {
+            .valor-container {
+                display: flex;
+                align-items: center;
+                .valor {
+                    font-size: large;
+                    font-weight: 500;
+                    margin-right: 10px;
                 }
-                .free-shipping{
-                    .logo{
+                .free-shipping {
+                    .logo {
                         width: 30px;
                     }
+                }
+            }
+            .sub-descripcion {
+                display: flex;
+                flex-direction: column;
+                .linkDescripcion {
+                    text-decoration: none;
+                    font-size: 24px;
+                    font-weight: 400;
+                    color: black;
+                }
+                .estadoProducto {
                 }
             }
         }
