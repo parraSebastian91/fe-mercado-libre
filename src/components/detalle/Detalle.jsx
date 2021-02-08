@@ -35,7 +35,7 @@ const Detalle = ({ location }) => {
           </div>
           <div className="descripcion">
             <h2>Descripci&oacute;n del producto</h2>
-            <p>{item.description}</p>
+            <p className="texto">{item.description}</p>
           </div>
         </div>
         <div className="costo">
@@ -53,7 +53,9 @@ const Detalle = ({ location }) => {
               </span>
             )}
           </div>
-          <div className="boton"></div>
+          <div className="boton">
+            <button className="btn-comprar"> comprar </button>
+          </div>
         </div>
       </div>
     </div>
