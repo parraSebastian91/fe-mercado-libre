@@ -1,22 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 import {
-    BrowserRouter as Router,
+    BrowserRouter,
     Switch,
     Route,
     Link,
-    BrowserRouter
+    Router
 } from "react-router-dom";
+import history from "./../../../utils/history";
 
 
-import Resultado from './resultado/Resultado'
-import Detalle from "./detalle/Detalle";
+import Resultado from './../../resultado/Resultado'
+import Detalle from "./../../detalle/Detalle";
 import './Content.scss'
 
 const routes = [
-
     {
         path: "/items",
         component: Resultado,
@@ -28,6 +28,10 @@ const routes = [
 ];
 
 const Content = () => {
+    // state
+
+    const [busqueda, setBusqueda] = useState('');
+
     return (
         <div className="full-content">
             <div className="content-style">
@@ -35,13 +39,13 @@ const Content = () => {
                     asdas
                 </div>
                 <div className="contenido">
-                    <BrowserRouter>
+                    <Router history={history}>
                         <Switch>
                             {routes.map((route, i) => (
                                 <Route exact path={route.path} component={route.component} key={i} />
                             ))}
                         </Switch>
-                    </BrowserRouter>
+                    </Router>
                 </div>
             </div>
         </div>
